@@ -19,6 +19,11 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: '/copy',
+    name: 'Copy',
+    component: () => import("../views/copy")
+  }
 ];
 
 const router = new VueRouter({
